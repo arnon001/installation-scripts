@@ -1,5 +1,5 @@
 #!/bin/bash
-set /p t=Test:
+read t
 echo "meow meow meow $t
 Meow meow
 $t" > test.txt
