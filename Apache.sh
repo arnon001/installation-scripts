@@ -9,10 +9,12 @@ echo "Opening port and starting ufw"
 sudo ufw enable
 sudo ufw allow Apache
 echo "Downloading Website files"
-set /p dn=Enter Your Domain Name:
+echo "Please enter your Domain Name:"
+read dn
 mkdir -p /var/www/$dn/
 cd /var/www/$dn/
-set /p git=Enter your git link:
+echo "Please enter your git repo:"
+read git
 git clone $git "html"
 cd ~
 echo "Doing Permissions"
