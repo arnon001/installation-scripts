@@ -3,8 +3,8 @@ clear
 echo off
 echo "updating and installing Apache and git"
 sudo apt update
-sudo apt install apache2
-sudo apt install git
+sudo apt install apache2 -y
+sudo apt install git -y
 echo "Opening port and starting ufw"
 sudo ufw enable
 sudo ufw allow Apache
