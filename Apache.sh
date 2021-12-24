@@ -1,9 +1,9 @@
 #!/bin/bash
 clear
-@echo off
+echo off
 echo "updating and installing Apache and git"
 sudo apt update
-sudo apt install Apache2
+sudo apt install pache2
 sudo apt install git
 echo "Opening port and starting ufw"
 sudo ufw enable
