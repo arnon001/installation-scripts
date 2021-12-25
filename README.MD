@@ -5,6 +5,8 @@ to install Apache 2
 Tested on Ubuntu Server 20.04
 
 ## Todo:
-Ngnix
+- [ ] Ngnix
+### Complete:
+- [x] Apache 2
 ## Contributor
 If you wanna help just Fork the Project, Edit what you want and Pull request it!
