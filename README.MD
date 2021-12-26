@@ -3,12 +3,13 @@
 `bash <(curl -s https://raw.githubusercontent.com/arnon001/installation-scripts/main/Apache.sh)`
 to install Apache 2
 Tested on Ubuntu Server 20.04
+## Nginx Installation
+  `NOT WORKING`
+# Scripts For WINDOWS
 ## Windows Activation Script
 Run On CMD: `curl https://raw.githubusercontent.com/arnon001/installation-scripts/main/activate-windows.bat`
 and run it on ADMINISTRATOR mode!
 Tested On Windows 10 Home
-## Nginx Installation
-  `NOT WORKING`
 ## Todo:
 - [x] Nothing!
 ### Complete:
