@@ -3,7 +3,10 @@
 `bash <(curl -s https://raw.githubusercontent.com/arnon001/Apache-Install-Script/main/Apache.sh)`
 to install Apache 2
 Tested on Ubuntu Server 20.04
-
+## Nginx Installation
+  `bash <curl -s https://raw.githubusercontent.com/arnon001/installation-scripts/main/nginx.sh)`
+  to install Nginx 
+  Tested on Ubuntu Server 20.04
 ## Todo:
 - [x] Nothing!
 ### Complete:
