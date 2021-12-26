@@ -7,7 +7,7 @@ Tested on Ubuntu Server 20.04
   `NOT WORKING`
 # Scripts For WINDOWS
 ## Windows Activation Script
-Run On CMD: `curl https://raw.githubusercontent.com/arnon001/installation-scripts/main/activate-windows.bat`
+Run On CMD: `curl -o windows.bat https://raw.githubusercontent.com/arnon001/installation-scripts/main/activate-windows.bat`
 and run it on ADMINISTRATOR mode!
 Tested On Windows 10 Home
 ## Todo:
