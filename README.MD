@@ -9,7 +9,7 @@ Tested on Ubuntu Server 20.04
 - [x] Nothing!
 ### Complete:
 - [x] Apache 2
-- [] Ngnix - Not Working
+- [ ] Ngnix - Not Working
 ## Contributor
 If you wanna help just Fork the Project, Edit what you want and Pull request it!
 ## New Scripts
