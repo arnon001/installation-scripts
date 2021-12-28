@@ -10,11 +10,16 @@ Tested on Ubuntu Server 20.04
 Run On CMD: `curl -o windows.bat https://raw.githubusercontent.com/arnon001/installation-scripts/main/activate-windows.bat`
 and run it on ADMINISTRATOR mode!
 Tested On Windows 10 Home
+## GeckoDriver tools
+run on cmd: `curl -o geckodriver.ps1 https://raw.githubusercontent.com/arnon001/installation-scripts/main/geckodriver.ps1`
+right click on the file and run with powershell
+Tested on windows 10
 ## Todo:
 - [x] Nothing!
 ### Complete:
 - [x] Apache 2
-- [x] Windows Activation Script 
+- [x] Windows Activation Script
+- [x] GecoDriver  
 - [ ] Ngnix - Not Working
 ## Contributor
 If you wanna help just Fork the Project, Edit what you want and Pull request it!
