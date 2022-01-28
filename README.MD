@@ -19,7 +19,8 @@ Tested on windows 10
 ### Complete:
 - [x] Apache 2
 - [x] Windows Activation Script
-- [x] GecoDriver  
+- [x] GecoDriver 
+- [x] Ubuntu Desktop + Google Remote Control  
 - [ ] Ngnix - Not Working
 ## Contributor
 If you wanna help just Fork the Project, Edit what you want and Pull request it!
