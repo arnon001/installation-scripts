@@ -7,7 +7,11 @@ echo "for installtion of Google Remote Desktop only (Must Have an enviroment) Wi
 echo "for installation of ubuntu-desktop only, select 4"
 
 read in
-while($in>4 || $in<1) {
+while( $in > 4 ) {
+	echo "Invaild Option! please Rerun the script!"
+	exit
+}
+while( $in < 1 ) {
 	echo "Invaild Option! please Rerun the script!"
 	exit
 }
