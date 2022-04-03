@@ -3,6 +3,8 @@
 `bash <(curl -s https://raw.githubusercontent.com/arnon001/installation-scripts/main/Apache.sh)`
 to install Apache 2
 Tested on Ubuntu Server 20.04
+## Fix Systemctl script
+`bash <(curl -s https://raw.githubusercontent.com/arnon001/installation-scripts/main/systemctl.sh)`
 ## Nginx Installation
   `NOT WORKING`
 # Scripts For WINDOWS
@@ -21,6 +23,7 @@ Tested on windows 10
 - [x] Windows Activation Script
 - [x] GecoDriver 
 - [x] Ubuntu Desktop + Google Remote Control  
+- [x] systemctl fix for wsl2 
 - [ ] Ngnix - Not Working
 ## Contributor
 If you wanna help just Fork the Project, Edit what you want and Pull request it!
