@@ -3,7 +3,7 @@ lsb_release -a
 echo ""
 echo "insert your ubuntu version (only 18.04 and 20.04)"
 read version
-if (version == 20.04 || version == 20) 
+if ( $version == 20.04 || $version == 20) 
 	then
 		sudo apt install -y python2
 		sudo mv /usr/bin/systemctl /usr/bin/systemctl.old
@@ -13,7 +13,7 @@ if (version == 20.04 || version == 20)
 		clear
 		echo "Done!, run systemctl to check"
 	fi
-if (version == 18.04 || version == 18)
+if ( $version == 18.04 || $version == 18)
 	then
 		sudo apt install -y python-minimal
 		sudo mv /usr/bin/systemctl /usr/bin/systemctl.old
