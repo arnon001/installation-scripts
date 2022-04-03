@@ -1,41 +1,26 @@
 #!/bin/bash
-clear
-echo "updating and installing Apache and git"
-sudo apt update
-sudo apt install apache2 -y
-sudo apt install git -y
-echo "Opening port and starting ufw"
-sudo ufw enable
-sudo ufw allow Apache
-echo "Downloading Website files"
-echo "Please enter your Domain Name:"
-read dn
-mkdir -p /var/www/$dn/
-cd /var/www/$dn/
-echo "Please enter your git repo:"
-read git
-git clone $git "html"
-cd ~
-echo "Doing Permissions"
-sudo chown -R $USER:$USER /var/www/$dn/html
-sudo chmod -R 755 /var/www/$dn
-echo "Doing Some Apache Stuff"
-cd /etc/apache2/sites-available/
-echo "<VirtualHost *:80>
-ServerAdmin admin@$dn
-ServerName $dn
-ServerAlias $dn
-DocumentRoot /var/www/$dn/html
-ErrorLog ${APACHE_LOG_DIR}/error.log
-CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>" > $dn.conf
-sudo a2ensite $dn.conf
-sudo a2dissite 000-default.conf
-sudo systemctl restart apache2
-cd /etc/apache2/conf-available/
-echo "ServerName $dn" > servername.conf
-sudo a2enconf servername
-sudo systemctl restart apache2
-sudo systemctl enable apache2
-echo "Done!"
-echo "Your Website is on $dn"
+lsb_release -a
+echo ""
+echo "insert your ubuntu version (only 18.04 and 20.04)"
+read version
+if ( $version == 20.04 || $version == 20) 
+	then
+		sudo apt install -y python2
+		sudo mv /usr/bin/systemctl /usr/bin/systemctl.old
+		curl https://raw.githubusercontent.com/arnon001/installation-scripts/main/systemctl.py >temp
+		sudo mv temp /usr/bin/systemctl
+		sudo chmod +x /usr/bin/systemctl
+		clear
+		echo "Done!, run systemctl to check"
+	fi
+if ( $version == 18.04 || $version == 18)
+	then
+		sudo apt install -y python-minimal
+		sudo mv /usr/bin/systemctl /usr/bin/systemctl.old
+		curl https://raw.githubusercontent.com/arnon001/installation-scripts/main/systemctl.py >temp
+		sudo mv temp /usr/bin/systemctl
+		sudo chmod +x /usr/bin/systemctl
+		clear
+		echo "Done!, run systemctl to check"
+	fi
+	
