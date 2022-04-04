@@ -10,11 +10,11 @@ sudo ufw allow Apache
 echo "Downloading Website files"
 echo "Please enter your Domain Name:"
 read dn
-mkdir -p /var/www/$dn/
+sudo mkdir -p /var/www/$dn/
 cd /var/www/$dn/
 echo "Please enter your git repo:"
 read git
-git clone $git "html"
+sudo git clone $git "html"
 cd ~
 echo "Doing Permissions"
 sudo chown -R $USER:$USER /var/www/$dn/html
