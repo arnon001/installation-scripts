@@ -16,6 +16,10 @@ Tested On Windows 10 Home
 run on cmd: `curl -o geckodriver.ps1 https://raw.githubusercontent.com/arnon001/installation-scripts/main/geckodriver.ps1`
 right click on the file and run with powershell
 Tested on windows 10
+## Check CPU temp
+Run On CMD: `curl -o Check-temp.cmd https://raw.githubusercontent.com/arnon001/installation-scripts/main/Check-Temp.cmd`
+and run it on ADMINISTRATOR mode!
+Tested On Windows 10 Home
 ## Todo:
 - [x] Nothing!
 ### Complete:
@@ -24,6 +28,7 @@ Tested on windows 10
 - [x] GecoDriver 
 - [x] Ubuntu Desktop + Google Remote Control  
 - [x] systemctl fix for wsl2 
+- [x] Check CPU temp
 - [ ] Ngnix - Not Working
 ## Contributor
 If you wanna help just Fork the Project, Edit what you want and Pull request it!
